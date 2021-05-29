@@ -1,0 +1,69 @@
+html{
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    background-image:linear-gradient(to top right,rgba(26, 26, 26, 0.753),rgba(0, 0, 0, 0.685)), url(../bg.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+
+}
+
+h1{
+   
+    font-size: 6rem;
+    margin: 2rem;
+    padding: 2rem;
+    color: rgba(126, 245, 146, 0.842);
+}
+
+.form{
+    display: inline-block;
+    padding: 2rem;
+    margin: 3rem;
+    font-size: 4rem;
+    top: 0;
+    left: 0;
+    transform: translate(90%,5%);
+    text-align: center;
+    
+
+}
+
+.variance,
+.skewness,
+.curtosis,
+.entropy,
+.btn{
+    margin: 1rem;
+    padding: 1rem;
+    
+}
+
+.btn{
+    background-color:rgba(126, 245, 146, 0.842) ;
+    font-size: 3rem;
+    border-radius: 2rem;
+    margin-top: 3rem;
+}
+
+.btn:hover,
+.btn:active{
+    background-color:rgba(12, 231, 48, 0.842) ;
+}
+
+h5{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 3rem;
+    
+}
+
+p{
+  
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+
+
+}

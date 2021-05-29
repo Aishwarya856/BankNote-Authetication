@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>BankNote Authetication</title>
+
+    <link rel="stylesheet" href="../static/css/main.css">
+</head>
+
+<body>
+    <h1>BankNote Authetication</h1>
+
+    <form action="{{ url_for('predict')}}" method="POST" class="form">
+        <label for="variance"> Enter Variance :</label>
+        <input type="number" id="variance" name="variance" class="variance" required>
+        <br>
+
+        <label for="skewness"> Enter Skewness :</label>
+        <input type="number" id="skewness" name="skewness" class="skewness" required>
+        <br>
+
+        <label for="curtosis"> Enter Curtosis:</label>
+        <input type="number" id="curtosis" name="curtosis" class="curtosis" required>
+        <br>
+
+        <label for="entropy"> Enter entropy:</label>
+        <input type="number" id="entropy" name="entropy" class="entropy" required>
+        <br>
+
+        <input type="submit" value="Submit" class="btn">
+
+
+
+
+
+    </form>
+
+    {% if prediction_text%} <h5>
+        {{prediction_text}}</h5>
+    {%else%}
+    <h5></h5>
+    {%endif%}
+
+
+
+    <p>©2021 Aishwarya Harkare</p>
+
+</body>
+
+</html>
